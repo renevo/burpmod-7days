@@ -1,0 +1,97 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+mistaFridgeDesc,blocks,block,,,A place to store food and drink.
+mistaFridge02Desc,blocks,block,,,A stainless steel fridge with plenty of room to store food.
+storageRetroFridge,blocks,block,,,Retro Fridge
+tractorBlue,blocks,block,,,Blue Tractor
+tractorGreen,blocks,block,,,Green Tractor 
+tractorRed,blocks,block,,,Red Tractor 
+tractorWhite,blocks,block,,,White Tractor
+abandonedPickupTruck01DoorBlue,blocks,block,,,Blue Abandoned Pickup Truck
+abandonedPickupTruck01DoorBrown,blocks,block,,,Brown Abandoned Pickup Truck
+abandonedPickupTruck01DoorGreen,blocks,block,,,Green Abandoned Pickup Truck
+abandonedPickupTruck01DoorGrey,blocks,block,,,Grey Abandoned Pickup Truck
+abandonedPickupTruck01DoorOrange,blocks,block,,,Orange Abandoned Pickup Truck
+abandonedPickupTruck01DoorPink,blocks,block,,,Pink Abandoned Pickup Truck
+abandonedPickupTruck01DoorPurple,blocks,block,,,Purple Abandoned Pickup Truck
+abandonedPickupTruck01DoorRed,blocks,block,,,Red Abandoned Pickup Truck
+abandonedPickupTruck01DoorWhite,blocks,block,,,White Abandoned Pickup Truck
+abandonedPickupTruck01DoorYellow,blocks,block,,,Yellow Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Blue,blocks,block,,,Blue Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Brown,blocks,block,,,Brown Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorBlue,blocks,block,,,Blue Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorBrown,blocks,block,,,Brown Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorGreen,blocks,block,,,Green Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorGrey,blocks,block,,,Grey Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorOrange,blocks,block,,,Orange Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorPink,blocks,block,,,Pink Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorPurple,blocks,block,,,Purple Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorRed,blocks,block,,,Red Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorWhite,blocks,block,,,White Abandoned Pickup Truck
+abandonedPickupTruck3Wide01DoorYellow,blocks,block,,,Yellow Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Green,blocks,block,,,Green Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Grey,blocks,block,,,Grey Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Orange,blocks,block,,,Orange Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Pink,blocks,block,,,Pink Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Purple,blocks,block,,,Purple Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Red,blocks,block,,,Red Abandoned Pickup Truck
+abandonedPickupTruck3Wide01White,blocks,block,,,White Abandoned Pickup Truck
+abandonedPickupTruck3Wide01Yellow,blocks,block,,,Yellow Abandoned Pickup Truck
+abandonedSUV01DoorsBlue,blocks,block,,,Blue Abandoned SUV
+abandonedSUV01DoorsBrown,blocks,block,,,Brown Abandoned SUV
+abandonedSUV01DoorsGreen,blocks,block,,,Green Abandoned SUV
+abandonedSUV01DoorsGrey,blocks,block,,,Grey Abandoned SUV
+abandonedSUV01DoorsOrange,blocks,block,,,Orange Abandoned SUV
+abandonedSUV01DoorsPink,blocks,block,,,Pink Abandoned SUV
+abandonedSUV01DoorsPurple,blocks,block,,,Purple Abandoned SUV
+abandonedSUV01DoorsRed,blocks,block,,,Red Abandoned SUV
+abandonedSUV01DoorsWhite,blocks,block,,,White Abandoned SUV
+abandonedSUV01DoorsYellow,blocks,block,,,Yellow Abandoned SUV
+abandonedSUV3Wide01Blue,blocks,block,,,Blue Abandoned SUV
+abandonedSUV3Wide01Brown,blocks,block,,,Brown Abandoned SUV
+abandonedSUV3Wide01DoorsBlue,blocks,block,,,Blue Abandoned SUV
+abandonedSUV3Wide01DoorsBrown,blocks,block,,,Brown Abandoned SUV
+abandonedSUV3Wide01DoorsGreen,blocks,block,,,Green Abandoned SUV
+abandonedSUV3Wide01DoorsGrey,blocks,block,,,Grey Abandoned SUV
+abandonedSUV3Wide01DoorsOrange,blocks,block,,,Orange Abandoned SUV
+abandonedSUV3Wide01DoorsPink,blocks,block,,,Pink Abandoned SUV
+abandonedSUV3Wide01DoorsPurple,blocks,block,,,Purple Abandoned SUV
+abandonedSUV3Wide01DoorsRed,blocks,block,,,Red Abandoned SUV
+abandonedSUV3Wide01DoorsWhite,blocks,block,,,White Abandoned SUV
+abandonedSUV3Wide01DoorsYellow,blocks,block,,,Yellow Abandoned SUV
+abandonedSUV3Wide01Green,blocks,block,,,Green Abandoned SUV
+abandonedSUV3Wide01Grey,blocks,block,,,Grey Abandoned SUV
+abandonedSUV3Wide01Orange,blocks,block,,,Orange Abandoned SUV
+abandonedSUV3Wide01Pink,blocks,block,,,Pink Abandoned SUV
+abandonedSUV3Wide01Purple,blocks,block,,,Purple Abandoned SUV
+abandonedSUV3Wide01Red,blocks,block,,,Red Abandoned SUV
+abandonedSUV3Wide01White,blocks,block,,,White Abandoned SUV
+abandonedSUV3Wide01Yellow,blocks,block,,,Yellow Abandoned SUV
+4x4Static,blocks,block,,,4x4 Truck
+bicycleStatic,blocks,block,,,Bicycle
+gyrocopterStatic,blocks,block,,,Gyrocopter
+minibikeStatic,blocks,block,,,Minibike
+motorcycleStatic,blocks,block,,,Motorcycle
+busCityTraderOnly,blocks,block,,,Bob's Bus
+cntClothesRackRectangleEmpty2,blocks,block,,,Clothes Rack
+cntClothesRackRectangleEmptyMilitary,blocks,block,,,Military Clothes Rack
+traderClothesRackRoundEmptyMilitary,blocks,block,,,Military Clothes Rack
+traderShelvesMetalEmpty,blocks,block,,,Metal Shelves
+traderShelvesMetalFullA,blocks,block,,,Metal Shelves
+traderShelvesWoodEmpty,blocks,block,,,Wood Shelves
+traderShelvesWoodFullA,blocks,block,,,Wood Shelves
+traderShelvesFreeStandingEmpty,blocks,block,,,Wood Shelves
+traderShelvesFreeStandingFullA,blocks,block,,,Wood Shelves
+traderMilitaryGoodsA,blocks,block,,,Trader Military Goods
+traderMilitaryGoodsB,blocks,block,,,Trader Military Goods
+traderMilitaryGoodsC,blocks,block,,,Trader Military Goods
+traderMilitaryGoodsD,blocks,block,,,Trader Military Goods
+traderMilitaryMetalShelvesEmpty,blocks,block,,,Metal Shelves
+traderMilitaryMetalShelvesFull,blocks,block,,,Metal Shelves
+cntTraderSuperChest,blocks,block,,,Trader's Stash Chest
+traderClothesShelfHalfShirts01,blocks,block,,,Clothes Shelf
+traderClothesShelfHalfShirts02,blocks,block,,,Clothes Shelf
+traderClothesShelfStackShirts01,blocks,block,,,Clothes Shelf
+traderClothesShelfStackShirts02,blocks,block,,,Clothes Shelf
+
+
+ 

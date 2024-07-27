@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+
+    <!-- More likely to get eggs in nests -->
+    <setattribute xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']/item[@name='foodEgg']" name="loot_prob_template">med</setattribute>
+</burpmod>

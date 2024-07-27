@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+
+    <!-- less meat to make stuff (there is a perk to get this to 1) -->
+    <set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='5']/@count">3</set>
+
+    <!-- craftable fridges -->
+    <append xpath="/recipes">
+        <recipe name="storageRetroFridge" count="1" craft_time="20">
+            <ingredient name="resourceForgedIron" count="5"/>
+            <ingredient name="resourceMetalPipe" count="2"/>
+        </recipe>
+
+        <recipe name="Fridge" count="1" craft_time="25">
+            <ingredient name="resourceForgedIron" count="5"/>
+            <ingredient name="resourceMetalPipe" count="2"/>
+        </recipe>
+    </append>
+</burpmod>

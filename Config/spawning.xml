@@ -1,0 +1,91 @@
+<burpmod>
+    <remove xpath="/spawning/biome[@name='pine_forest']"></remove>
+    <remove xpath="/spawning/biome[@name='burnt_forest']"></remove>
+    <remove xpath="/spawning/biome[@name='desert']"></remove>
+    <remove xpath="/spawning/biome[@name='wasteland']"></remove>
+    <remove xpath="/spawning/biome[@name='snow']"></remove>
+
+    <append xpath="/spawning">
+        <!-- Pine Forest -->
+        <biome name="pine_forest">
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+            <spawn maxcount="16" respawndelay="0.012" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+            <spawn maxcount="16" respawndelay="0.011" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
+            <spawn maxcount="16" respawndelay="0.012" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
+
+            <spawn maxcount="6" respawndelay=".8" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+            <spawn maxcount="4" respawndelay=".8" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
+        </biome>
+
+        <!-- Burnt Forest -->
+        <biome name="burnt_forest">
+            <spawn maxcount="16" respawndelay=".013" time="Day" entitygroup="ZombiesBurntForest" />
+            <spawn maxcount="16" respawndelay=".013" time="Night" entitygroup="ZombiesNight" />
+
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+            <spawn maxcount="16" respawndelay="0.013" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+            <spawn maxcount="16" respawndelay="0.013" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+            <spawn maxcount="16" respawndelay="0.013" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+
+            <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="1.1" time="Any" entitygroup="EnemyAnimalsBurntForestAny" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsBurntForestNight" spawnDeadChance="0" />
+        </biome>
+
+        <!-- Desert -->
+        <biome name="desert">
+            <spawn maxcount="16" respawndelay=".012" time="Any" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+            <spawn maxcount="16" respawndelay=".012" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+            <spawn maxcount="16" respawndelay="0.012" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+            <spawn maxcount="16" respawndelay="0.012" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+            <spawn maxcount="16" respawndelay="0.012" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+
+            <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="2.5" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="2.5" time="Night" entitygroup="EnemyAnimalsDesertNight" spawnDeadChance="0" />
+        </biome>
+
+        <!-- Wasteland -->
+        <biome name="wasteland">
+            <spawn maxcount="16" respawndelay="0.008" time="Day" entitygroup="ZombiesWasteland" notags="commercial,industrial,downtown" />
+            <spawn maxcount="16" respawndelay="0.008" time="Night" entitygroup="ZombiesWastelandNight" notags="commercial,industrial,downtown" />
+
+            <spawn maxcount="16" respawndelay="0.008" time="Day" entitygroup="ZombiesWasteland" tags="commercial,industrial" notags="downtown" />
+            <spawn maxcount="16" respawndelay="0.008" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown" />
+
+            <spawn maxcount="16" respawndelay="0.008" time="Day" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
+            <spawn maxcount="16" respawndelay="0.008" time="Night" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
+
+            <spawn maxcount="2" respawndelay="0.3" time="Any" entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
+            <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="WildGameStagNight" spawnDeadChance="0" />
+            <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="EnemyAnimalsWastelandNight" spawnDeadChance="0" />
+        </biome>
+
+        <!-- Snow -->
+        <biome name="snow">
+            <spawn maxcount="16" respawndelay=".0012" time="Any" entitygroup="SnowZombies" notags="downtown" />
+            <spawn maxcount="16" respawndelay=".0012" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+
+            <spawn maxcount="16" respawndelay="0.0012" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+            <spawn maxcount="16" respawndelay="0.0012" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+            <spawn maxcount="16" respawndelay="0.0012" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+            <spawn maxcount="16" respawndelay="0.0012" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+
+            <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+            <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="WildGameStagNight" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="2.1" time="Any" entitygroup="EnemyAnimalsSnow" spawnDeadChance="0" />
+            <spawn maxcount="2" respawndelay="2.1" time="Night" entitygroup="EnemyAnimalsSnowNight" spawnDeadChance="0" />
+        </biome>
+    </append>
+</burpmod>

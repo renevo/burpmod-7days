@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+
+    <!--Loot Bags Last Longer Time-->
+    <set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">6000</set>
+    <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">6000</set>
+    <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">6000</set>
+    <set xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">6000</set>
+
+    <!--Zombie Loot Bag Drop Rates-->
+    <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie')]/property[@name='LootDropProb']/@value">.20</set>    <!--20%-->
+    <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">.50</set>    <!--50%-->
+    <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Radiated')]">        <!--80%-->
+        <property name="LootDropProb" value=".80"/>
+        <property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+    </set>
+
+</burpmod>
