@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <burpmod>
 
+    <!-- zombie reach nerf -->
+    <set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombieShortFeral']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombieBurning']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+    <set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+    <set xpath="/items/item[@name='meleeHandzombieMutated']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+    <set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+    <set xpath="/items/item[@name='meleeHandzombieMutatedRadiated']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+
     <!-- faster hammer and nail gun -->
     <set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay' and @value='.5']/@value">0.35</set>
     <set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay' and @value='.64']/@value">0.45</set>
@@ -142,4 +154,44 @@
     <set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">500</set>
     <set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">500</set>
 
+    <!-- empty jars -->
+    <append xpath="/items">
+        <item name="drinkJarEmpty">
+            <property name="CustomIcon" value="drinkJarEmpty"/>
+            <property name="HoldType" value="3"/>
+            <property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mglass"/>
+            <property name="Stacknumber" value="125"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Class" value="ItemClassWaterContainer"/>
+            <property name="WaterCapacity" value="0.1"/>
+            <property name="CraftingIngredientTime" value="9"/>
+            <property class="Action1">
+                <property name="Class" value="CollectWater"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Change_item_to" value="drinkJarRiverWater"/>
+                <property name="Sound_start" value="bucketfill_water"/>
+            </property>
+            <property name="Group" value="Resources"/>
+        </item>
+    </append>
+
+    <append xpath="/items/item[@name='drinkJarRiverWater'
+			or @name='drinkJarBoiledWater'
+			or @name='drinkJarPureMineralWater'
+			or @name='drinkJarYuccaJuice'
+			or @name='drinkYuccaJuiceSmoothie'
+			or @name='drinkJarGoldenRodTea'
+			or @name='foodHoney'
+			or @name='drinkJarRedTea'
+			or @name='drinkJarCoffee'
+			or @name='drinkJarBlackStrapCoffee'
+			or @name='drinkJarBeer'
+			or @name='drinkJarGrandpasMoonshine'
+			or @name='drinkJarGrandpasAwesomeSauce'
+			or @name='drinkJarGrandpasLearningElixir'
+			or @name='drinkJarGrandpasForgettingElixir']/property[@class='Action0']">
+        <property name="Create_item" value="drinkJarEmpty"/>
+    </append>
 </burpmod>

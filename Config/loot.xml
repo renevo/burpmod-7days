@@ -3,4 +3,13 @@
 
     <!-- More likely to get eggs in nests -->
     <setattribute xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']/item[@name='foodEgg']" name="loot_prob_template">med</setattribute>
+
+    <!-- loot empty jars -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodTrashCommon']">
+        <item name="drinkJarEmpty" loot_prob_template="med"/>
+    </append>
+
+    <!-- Death Bag is larger so no lose all goodies-->
+    <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">12,12</set>
+
 </burpmod>

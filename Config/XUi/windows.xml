@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <burpmod>
 
     <!-- target health bars -->
     <remove xpath="/windows/window[@name='windowTargetBar']/rect"/>
     <append xpath="/windows/window[@name='windowTargetBar']">
-        <window name="windowTargetBar" controller="TargetBar" visibility="always"> 
-            <rect pos="-120,410" width="240" height="10" visible="{visible}" >
+        <window name="windowTargetBar" controller="TargetBar" visibility="always">
+            <rect pos="-120,350" width="240" height="10" visible="{visible}">
                 <sprite depth="1" name="border" color="0,0,0,100" type="sliced" width="240" globalopacity="true"/>
                 <filledsprite depth="2" name="BarContent" type="filled" color="200,0,0,300" width="240" fill="{fill}" globalopacity="true"/>
                 <label depth="3" name="TextContent" pos="120,-26" font_size="24" color="[white]" justify="center" pivot="center" text="{name}: {currentwithmax}" height="30"/>
@@ -12,4 +13,77 @@
         </window>
     </append>
 
+    <!-- backpack size -->
+    <set xpath="/windows/window[@name='windowBackpack']/@width">653</set>
+    <set xpath="/windows/window[@name='windowBackpack']/@height">320</set>
+
+    <!-- panel size -->
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">330</set>
+
+    <!-- cell size -->
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">11</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">60</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">60</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">660</set>    <!-- 600 -->
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">360</set>    <!-- 350 -->
+
+    <!-- dropped backpack size -->
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">12</set>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">12</set>
+
+    <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"></remove>
+
+    <append xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']">
+        <ES66_backpack_item_stack name="0"/>
+    </append>
+
+    <!--*****Crafting Queue*****-->
+    <remove xpath="/windows/window[@name='windowCraftingQueue']"></remove>
+    <append xpath="/windows">
+        <window name="windowCraftingQueue" width="397" height="120" panel="Left" cursor_area="true">
+            <!--#$-IGS END.-$#-->
+            <rect depth="0" pos="-52,-90" width="303" controller="CraftingQueue">
+                <!-- <sprite name="background" color="[black]" type="sliced" pos="0,-10" /> -->
+                <grid name="queue" rows="2" cols="6" pos="73,82" cell_width="60" cell_height="60" repeat_content="true">
+                    <CM_recipe_stack name="0" />
+                </grid>
+            </rect>
+        </window>
+    </append>
+
+    <!--*****Output Queue*****-->
+    <remove xpath="/windows/window[@name='windowOutput']"></remove>
+    <append xpath="/windows">
+        <window name="windowOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true">
+            <!--#$-IGS END.-$#-->
+            <panel style="header.panel">
+                <sprite style="header.icon" sprite="ui_game_symbol_loot_sack" />
+                <label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+            </panel>
+            <rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
+                <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+                <grid depth="10" name="inventory" rows="6" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+                    <item_stack name="0" />
+                </grid>
+            </rect>
+        </window>
+
+        <window name="windowOutputForge" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow">
+            <!--#$-IGS END.-$#-->
+            <panel style="header.panel" pos="0,3">
+                <sprite style="header.icon" sprite="ui_game_symbol_loot_sack" />
+                <label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+                <rect pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+                    <button depth="3" name="btnMoveAll" sprite="ui_game_symbol_store_all_up" tooltip="{take_all_tooltip}" pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+                </rect>
+            </panel>
+            <rect name="content" depth="0" pos="0,-40" height="150" disablefallthrough="true" on_press="true">
+                <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+                <grid depth="10" name="inventory" rows="3" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+                    <item_stack name="0" />
+                </grid>
+            </rect>
+        </window>
+    </append>
 </burpmod>

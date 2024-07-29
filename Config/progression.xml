@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+
+	<remove xpath="/progression/perks/perk[@name='perkPackMule']" />
+	<remove xpath="/progression/perks/book[@name='perkNightStalkerThiefAdrenaline']" />
+	<remove xpath="/progression/perks/book[@name='perkFiremansAlmanacComplete']" />
+
+	<append xpath="/progression/perks">
+
+		<perk name="perkPackMule" parent="skillStrengthGeneral" name_key="perkPackMuleName" desc_key="You're a pack mule and can carry more items in your inventory without suffering movement penalties. You will still need extra pockets in order to max out your backpack, but this perk is now useful" icon="ui_game_symbol_pack_mule">
+			<level_requirements level="1">
+				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="1" desc_key="reqStrengthLevel01"/>
+			</level_requirements>
+			<level_requirements level="2">
+				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="reqStrengthLevel02"/>
+			</level_requirements>
+			<level_requirements level="3">
+				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="3" desc_key="reqStrengthLevel03"/>
+			</level_requirements>
+			<level_requirements level="4">
+				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+			</level_requirements>
+			<level_requirements level="5">
+				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/>
+			</level_requirements>
+
+			<effect_group>
+				<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
+				<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="This Perk increases your capacity by 3 more items without being encumbered." />
+				<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="Increases your capacity by an extra 3, for a total of 6 over base."/>
+				<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="Further increases your capacity by 4 for a total of 10 without being encumbered."/>
+				<effect_description level="4" desc_key="perkPackMuleRank4Desc" long_desc_key="Further increases your capacity by yet another 4 for a total of 14 without being encumbered."/>
+				<effect_description level="5" desc_key="perkPackMuleRank5Desc" long_desc_key="Finally increases your capacity by 4 additional slots bringing the total to 18 above base without being encumbered."/>
+			</effect_group>
+		</perk>
+
+	</append>
+
+	<!-- *** NIGHT_STALKER_VOLUME_04_ADRENALINE -->
+	<append xpath="/progression/perks">
+		<book name="perkNightStalkerThiefAdrenaline" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerThiefAdrenalineDesc" long_desc_key="perkNightStalkerThiefAdrenalineLongDesc">
+			<effect_group>
+				<requirement name="IsNight"/>
+				<requirement name="!HasBuff" buff="twitch_buffEncumbered"/>
+				<passive_effect name="CarryCapacity" operation="base_set" level="1" value="66"/>
+			</effect_group>
+		</book>
+	</append>
+	<!-- *** 7/7 THE_FIREMAN'S_ALMANAC_COMPLETE -->
+	<append xpath="/progression/perks">
+		<book name="perkFiremansAlmanacComplete" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacCompleteDesc" long_desc_key="perkFiremansAlmanacCompleteLongDesc">
+			<effect_group>
+				<requirement name="InBiome" biome="8"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.2" tags="running"/>
+				<!-- perkFiremansAlmanacComplete -->
+				<passive_effect name="CarryCapacity" operation="base_set" level="1" value="66"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="InBiome" biome="9"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.2" tags="running"/>
+				<!-- perkFiremansAlmanacComplete -->
+				<passive_effect name="CarryCapacity" operation="base_set" level="1" value="66"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.5" tags="chainsaw"/>
+			</effect_group>
+		</book>
+
+
+	</append>
+
+</burpmod>

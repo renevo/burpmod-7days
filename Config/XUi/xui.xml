@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+  <!--Forge gets its own output window. It doesn't have room to use the XL output window.-->
+  <remove xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']" />
+  <insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='character']">
+    <window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsForge" />
+      <window name="windowFuel" />
+      <window name="windowForgeInput" />
+      <window name="windowOutputForge" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+  </insertAfter>
+</burpmod>

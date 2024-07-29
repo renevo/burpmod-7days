@@ -1,9 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <burpmod>
 
     <!-- Crop Growth rates: higher is longer -->
     <set xpath="blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">30</set>
     <set xpath="blocks/block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value">30</set>
 
+    <!-- Heat Adjustments -->
+    <set xpath="blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>    <!-- was 4000 -->
+    <set xpath="blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>    <!-- was 4000 -->
+    <set xpath="blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">1000</set>    <!-- was 4000 -->
+    <set xpath="blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">1000</set>    <!-- was 5000 -->
+    <set xpath="blocks/block[@name='cntDewCollector']/property[@name='HeatMapTime']/@value">500</set>    <!-- was 5000 -->
+    <set xpath="blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">2000</set>    <!-- was 5000 -->
+    <set xpath="blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">500</set>    <!-- was 5000 -->
+    <set xpath="blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">1500</set>    <!-- was 5000 -->
+    <set xpath="blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">1000</set>    <!-- was 5000 -->
 
     <!-- Fridges -->
     <append xpath="/blocks">

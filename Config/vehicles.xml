@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+    <!-- vehicle speed tweaks (may need adjustments)-->
+    <set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax_turbo']/@value">12, 9, 18, 9</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax_turbo']/@value">8, 6, 12, 6</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax_turbo']/@value">10, 6, 12.5, 6</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax_turbo']/@value">16, 8, 20, 10</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@name='velocityMax_turbo']/@value">18, 8, 24, 10</set>
+</burpmod>

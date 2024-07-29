@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+	<!-- increase the penalty of Encumberenc a bit -->
+	<set xpath="/buffs/buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@cvar='$encumbranceEffect'][@value='0.026']/@value">0.016</set>
+	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity'][@value='50']/@value">66</set>
+</burpmod>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+
+    <!-- swap jen/rek trader quests -->
+    <set xpath="/quests/quest[@id='tier2_nexttrader']/objective[@type='Goto']/property[@name='location_tag']/@value">TraderRekt</set>
+    <set xpath="/quests/quest[@id='tier2_nexttrader']/objective[@type='Goto']/property[@name='location_name']/@value">trader_rekt</set>
+    <set xpath="/quests/quest[@id='test_nexttrader']/objective[@type='Goto']/property[@name='location_tag']/@value">TraderRekt</set>
+    <set xpath="/quests/quest[@id='test_nexttrader']/objective[@type='Goto']/property[@name='location_name']/@value">trader_rekt</set>
+
+    <set xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_nexttrader']/@id">tier3_nexttrader</set>
+    <set xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_nexttrader']/@id">tier2_nexttrader</set>
+</burpmod>
+    

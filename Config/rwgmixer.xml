@@ -9,7 +9,7 @@
     <!-- Gives Old West a Trader and Gateway potential -->
     <set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_trader']/@value">true</set>
     <set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_gateway']/@value">true</set>
-    <set xpath="/rwgmixer/township[@name='oldwest']/property[@name='biomes']/@value">forest,burntforest,desert,snow</append>
+    <set xpath="/rwgmixer/township[@name='oldwest']/property[@name='biomes']/@value">forest,burntforest,desert,snow</set>
 
     <!-- Tiny 0 - 5000 RWG Fillers -->
     <set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='tiles']/@value">2, 3</set>    <!-- 1, 1 -->
@@ -43,4 +43,7 @@
     <set xpath="/rwgmixer/world[@name='large']/property[@class='countrytown']/property[@name='tiles']/@value">8, 9</set>    <!-- 5, 6 -->
     <set xpath="/rwgmixer/world[@name='large']/property[@class='town']/property[@name='tiles']/@value">10, 11</set>    <!-- 7, 8 -->
 
+    <!-- swap jen/rekt -->
+    <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@biomeTags">forest</set>
+    <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@biomeTags">burntforest</set>
 </burpmod>
