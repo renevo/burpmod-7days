@@ -46,4 +46,38 @@
     <!-- swap jen/rekt -->
     <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@biomeTags">forest</set>
     <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@biomeTags">burntforest</set>
+
+    <!-- bigger cities -->
+    <!-- Tiny 0 - 5000 Bigger Cities -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='city']/property[@name='tiles']/@value">20, 30</set>    <!-- 10, 15 -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 1, 2, 4 -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_city']/property[@name='tiles']/@value">14, 28</set>    <!-- 7, 14 -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 2, 3, 4 -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='citybig']/property[@name='tiles']/@value">56, 80</set>    <!-- 28, 40 -->
+    <set xpath="/rwgmixer/world[@name='tiny']/property[@class='citybig']/property[@name='count']/@value">2, 4, 8</set>    <!-- 0, 1, 2 -->
+
+    <!-- Small 5000 - 7000 RWG Fillers -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='city']/property[@name='tiles']/@value">20, 30</set>    <!-- 10, 15 -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 1, 2, 4 -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_city']/property[@name='tiles']/@value">14, 28</set>    <!-- 7, 14 -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 2, 3, 4 -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='citybig']/property[@name='tiles']/@value">56, 80</set>    <!-- 28, 40 -->
+    <set xpath="/rwgmixer/world[@name='small']/property[@class='citybig']/property[@name='count']/@value">2, 4, 8</set>    <!-- 0, 1, 2 -->
+
+    <!-- Medium 7000 - 10000 RWG Fillers -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='city']/property[@name='tiles']/@value">20, 30</set>    <!-- 10, 15 -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 1, 2, 4 -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_city']/property[@name='tiles']/@value">14, 28</set>    <!-- 7, 14 -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 2, 3, 4 -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='citybig']/property[@name='tiles']/@value">56, 80</set>    <!-- 28, 40 -->
+    <set xpath="/rwgmixer/world[@name='medium']/property[@class='citybig']/property[@name='count']/@value">2, 4, 8</set>    <!-- 0, 1, 2 -->
+
+    <!-- Large 10000 - 16000 RWG Fillers -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='city']/property[@name='tiles']/@value">20, 30</set>    <!-- 10, 15 -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 1, 2, 4 -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_city']/property[@name='tiles']/@value">14, 28</set>    <!-- 7, 14 -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_city']/property[@name='count']/@value">4, 8, 16</set>    <!-- 2, 3, 4 -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='citybig']/property[@name='tiles']/@value">56, 80</set>    <!-- 28, 40 -->
+    <set xpath="/rwgmixer/world[@name='large']/property[@class='citybig']/property[@name='count']/@value">2, 4, 8</set>    <!-- 0, 1, 2 -->
+
 </burpmod>
