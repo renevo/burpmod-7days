@@ -13,9 +13,9 @@
 
     <!--Zombie Loot Bag Drop Rates-->
     <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie')]/property[@name='LootDropProb']/@value">.20</set>    <!--20%-->
-    <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">.50</set>    <!--50%-->
+    <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">.20</set>    <!--50%-->
     <set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Radiated')]">        <!--80%-->
-        <property name="LootDropProb" value=".80"/>
+        <property name="LootDropProb" value=".20"/>
         <property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
     </set>
 

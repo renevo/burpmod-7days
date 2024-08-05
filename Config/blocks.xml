@@ -379,17 +379,17 @@
 
     <append xpath="/blocks/block[@name='bodyBagBlack' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'sinks'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagYellow' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'garage'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagPile' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'junkNOPOP'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagPileMix' ]">
@@ -399,27 +399,27 @@
 
     <append xpath="/blocks/block[@name='bodyBagPair' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'junkNOPOP'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagPairYellow' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'junkNOPOP'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagPairMixed' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'trashCompactor'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagBlackFlies' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'trashCompactor'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='bodyBagYellowFlies' ]">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'trashCompactor'/>
+        <property name='LootList' value = 'bathtub'/>
     </append>
 
     <append xpath="/blocks/block[@name='palletCartonMilitaryBase']">
@@ -569,12 +569,12 @@
 
     <append xpath="/blocks/block[@name='palletBrownBoxesLoose']">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'cupboard'/>
+        <property name='LootList' value = 'cardboardBox'/>
     </append>
 
     <append xpath="/blocks/block[@name='palletCompressedCardboard']">
         <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'cupboard'/>
+        <property name='LootList' value = 'cardboardBox'/>
     </append>
 
     <!-- Self Seed Farming -->
