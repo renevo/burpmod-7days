@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<burpmod>
+    <!-- Changes wasteland/burnt biome sky to clear -->
+    <append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']">
+        <spectrum name="desert"/>
+    </append>
+
+    <!-- less fog and rain -->
+
+    <!-- Snow Biome -->
+    <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">97</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">1</set>
+
+    <!-- Pine Forest Biome -->
+    <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">97</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">1</set>
+
+    <!-- Desert Biome -->
+    <set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">98</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">1</set>
+
+    <!-- Wasteland Biome -->
+    <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/@prob">98</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/@prob">1</set>
+
+    <!-- Burnt Forest Biome -->
+    <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='default']/@prob">98</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rain']/@prob">1</set>
+    <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='storm']/@prob">1</set>
+</burpmod>
