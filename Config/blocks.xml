@@ -327,23 +327,8 @@
     <set xpath="/blocks/block[@name='wineBarrelPlayer']/property[@name='CreativeMode']/@value">Player</set>
     <set xpath="/blocks/block[@name='wineBarrelPlayer']/property[@name='LootList']/@value">sodaFountain</set>
 
-    <append xpath="/blocks/block[@name='wineBarrelPlayerSecure' ]">
-        <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'sodaFountain'/>
-    </append>
-
     <set xpath="/blocks/block[@name='wineBarrelSetPlayer']/property[@name='CreativeMode']/@value">Player</set>
     <set xpath="/blocks/block[@name='wineBarrelSetPlayer']/property[@name='LootList']/@value">sodaFountain</set>
-
-    <append xpath="/blocks/block[@name='wineBarrelSetPlayerSecure' ]">
-        <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'trashCompactor'/>
-    </append>
-
-    <append xpath="/blocks/block[@name='wineBarrelPlainPlayerSecure' ]">
-        <property name="Class" value="Loot"/>
-        <property name='LootList' value = 'sodaFountain'/>
-    </append>
 
     <set xpath="/blocks/block[@name='wineBarrelPlainPlayer']/property[@name='LootList']/@value">sodaFountain</set>
 
