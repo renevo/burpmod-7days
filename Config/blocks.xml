@@ -21,7 +21,7 @@
         <block name="storageRetroFridge">
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="cntRetroFridgeVer1Closed"/>
-            <property name="Class" value="SecureLoot"/>
+            <!-- <property name="Class" value="SecureLoot"/> -->
             <property name="LootList" value="playerIronWritableStorage"/>
             <property name="DescriptionKey" value="mistaFridgeDesc"/>
             <property name="DisplayType" value="blockMulti"/>
@@ -57,7 +57,7 @@
             <property name="CustomIcon" value="cntFridgeStainlessSteel"/>
             <property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
             <property name="DescriptionKey" value="mistaFridge02Desc"/>
-            <property name="Class" value="SecureLoot"/>
+            <!-- <property name="Class" value="SecureLoot"/> -->
             <property name="LootList" value="playerIronWritableStorage"/>
             <property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
             <property name="Group" value="Building,advBuilding"/>
